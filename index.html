@@ -465,7 +465,7 @@ footer .wrap { padding-block: 28px; display: flex; justify-content: space-betwee
       <div class="rules">
         <div>
           <h3>Our scorecard signing key</h3>
-          <p>ECDSA P-256 with SHA-256, in use from October 2026. Download it only over HTTPS: <a href="https://www.sentinel.cloudcognoscente.com/keys/assurance-signing-2026-10.pem">assurance-signing-2026-10.pem</a>.</p>
+          <p>ECDSA P-256 with SHA-256, in use from October 2026. Download it only over HTTPS: <a href="https://www.thirdsigma.ai/keys/assurance-signing-2026-10.pem">assurance-signing-2026-10.pem</a>.</p>
         </div>
         <div>
           <h3>Its fingerprint</h3>
@@ -473,7 +473,7 @@ footer .wrap { padding-block: 28px; display: flex; justify-content: space-betwee
           <p><code>5b0a21c720c39bf30ad7451525131897e9b8a023aec770948d78ef59ea1bda3d</code></p>
         </div>
       </div>
-      <div class="verify" aria-label="Verify a scorecard against the published key">$ curl -sO https://www.sentinel.cloudcognoscente.com/keys/assurance-signing-2026-10.pem
+      <div class="verify" aria-label="Verify a scorecard against the published key">$ curl -sO https://www.thirdsigma.ai/keys/assurance-signing-2026-10.pem
 $ openssl pkey -pubin -in assurance-signing-2026-10.pem -outform DER | openssl dgst -sha256
 <b>5b0a21c720c39bf30ad7451525131897e9b8a023aec770948d78ef59ea1bda3d</b>
 $ openssl dgst -sha256 -verify assurance-signing-2026-10.pem \
@@ -545,7 +545,7 @@ $ openssl dgst -sha256 -verify assurance-signing-2026-10.pem \
       </div>
       <div class="contact">
         <span>To talk about a pilot, write to</span>
-        <a class="email" href="mailto:hello@sentinel.cloudcognoscente.com">hello@sentinel.cloudcognoscente.com</a>
+        <a class="email" href="mailto:hello@thirdsigma.ai">hello@thirdsigma.ai</a>
       </div>
     </div>
   </section>
