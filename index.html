@@ -473,7 +473,8 @@ footer .wrap { padding-block: 28px; display: flex; justify-content: space-betwee
           <p><code>5b0a21c720c39bf30ad7451525131897e9b8a023aec770948d78ef59ea1bda3d</code></p>
         </div>
       </div>
-      <div class="verify" aria-label="Verify a scorecard against the published key">$ curl -sO https://www.thirdsigma.ai/keys/assurance-signing-2026-10.pem
+      <div class="verify" aria-label="Verify a scorecard against the published key">$ aws s3 cp s3://&lt;your-bucket&gt;/sentinel-assurance/&lt;tenant&gt;/&lt;month&gt;/&lt;folder&gt;/ . --recursive
+$ curl -fsS --proto =https -O https://www.thirdsigma.ai/keys/assurance-signing-2026-10.pem
 $ openssl pkey -pubin -in assurance-signing-2026-10.pem -outform DER | openssl dgst -sha256
 <b>5b0a21c720c39bf30ad7451525131897e9b8a023aec770948d78ef59ea1bda3d</b>
 $ openssl dgst -sha256 -verify assurance-signing-2026-10.pem \
